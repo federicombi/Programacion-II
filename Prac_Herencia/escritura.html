@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="es"></html>
+        <title> Herencia </title>
+        <link rel="icon" type="image" href="https://pbs.twimg.com/profile_images/1804729054022475776/1318pJ5D_200x200.jpg">
+        <link rel="stylesheet" type="text/css" href="Estilos/style.css">
+    </head>
+    <body>
+        <form action="main.php" method="post" id="formulario">
+            <table>
+                <caption>
+                    <h1> Herencia </h1>
+                </caption>
+                <tr>
+                    <td>
+                        <p>
+                            Nombre : <input type="text" id="nombre" name="nombre"> <br> <br>
+                            Apellido: <input type="text" id="apellido" name="apellido"> <br><br>
+                            Mail:<input type="text" id="mail" name="mail"> <br><br>
+                            Dni:<input type="text" id="dni" name="dni"> <br><br>
+                            Fecha de Nacimiento:<input type="text" id="fecha_nacimiento" name="fecha_nacimiento"> <br><br>
+                            Localidad:<input type="text" id="localidad" name="localidad"> <br><br>
+                            Provincia:<input type="text" id="provincia" name="provincia"> <br><br>
+                            Telefono: <input type="text" id="telefono" name="telefono"> <br><br>    
+                            <input type="radio" id="esCliente" name="tipo_de_persona" value="cliente"> 
+                            <label for="esCliente"> Soy Cliente </label> 
+                            <input type="radio" id="esEmpleado" name="tipo_de_persona" value="empleado"> 
+                            <label for="esEmpleado"> Soy un empleado </label> <br><br>
+                            <button type="submit"> Enviar </button>
+                        </p>
+                        
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html>

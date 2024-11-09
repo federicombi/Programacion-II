@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simulacro Parcial</title>
+        <link rel="stylesheet" type="text/css" href= "css\style.css">
+    </head>
+    <body style="background-color:aliceblue">
+       <!-- <h1> Simulacro de Parical</h1>
+        <h2> Ingrese 10 numeros: </h2>
+        <input type="number" id="num">
+        <p id="mensaje" style="color:red"></p>
+        <p id="completado"></p>
+        <img id="imgChar" src="">
+        <img id="imgUser" src="">-->
+        <table>
+            <caption><h1>Simulacro de Parcial</h1></caption>
+            <tr>
+                <td style="width:20%;"></td>
+                <td>
+                    <p>Esta aplicación obtiene un personaje de Rick y Morty a partir de los números ingresados y un usuario del Random User Generator. 
+                        Si el personaje es humano, se mostrará la foto del personaje y la del usuario.
+                        Si el personaje <b>no</b> es humano, se mostrará solo el usuario y sus datos.</p>
+                    <div id="ingreso">
+                        <h2> Ingrese 10 numeros: </h2>
+                        <input type="number" id="num" autofocus>
+                        <button id="ingresar" onclick="takeNumbers(); limpiarCampo()">Ingresar</button>
+                    </div>
+                    <p id="mensajeError"></p>
+                    <div id="reseteo">
+                        <p id="completado"></p>
+                        <button id="resetear" onclick="reset()"><b>Reiniciar</b></button>
+                    </div>
+
+                </td>
+                <td style="width:20%;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="images" alt="Cargando imagenes...">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img id="imgChar" src="">
+                                </td>
+                                <td>
+                                    <img id="imgUser" src="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="userData">
+                        <table style="width:350px; margin: 0 auto;">
+                            <tr>
+                               <td style="width:110px;"><b>Nombre</b></td>
+                               <td id="nombre"></td>
+                            </tr>
+                            <tr>
+                               <td><b>Apellido:</b></td>
+                               <td id="apellido"></td>
+                            </tr>
+                            <tr>
+                               <td><b>Email:</b></td>
+                               <td id="email"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Edad:</b></td>
+                                <td id="edad"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+    <script src="js\fn.js"></script>
+</html>

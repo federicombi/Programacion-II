@@ -1,0 +1,15 @@
+table{
+    width:100%;
+    border:1px solid black
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(41, 7, 73);
+}
+#prueba{
+    font-family: Verdana;
+    font-size: 20px;
+}
+#mensaje_de_error{
+    color:red;
+}

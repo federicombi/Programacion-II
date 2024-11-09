@@ -1,0 +1,36 @@
+h1{
+    font-family:'Verdana'; 
+    color:darkblue;
+}
+h2{
+    font-family:'Verdana'; 
+    color:darkblue;
+    font-size:20px;
+}
+p{
+    font-family: "Verdana";
+    font-size: 13px;
+}
+table{
+    width:100%;
+    font-family: "Verdana";
+} 
+#mensajeError{
+    color:red;
+}
+#userData, #images{
+    display: none;
+}
+#reseteo{
+    margin-bottom:26px;
+    margin-top:26px;
+    display:none;
+    text-align: center;
+}
+#images{
+    text-align: center;
+}
+#completado{
+    color:green;
+    font-size:20px;
+}

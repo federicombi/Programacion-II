@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parcialito</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <caption id="titulo">
+                <h1>
+                    Parcialito v2
+                </h1>
+            </caption>
+            <tr id="fila_boton_buscar" style="text-align: center;">
+                <td style="width:7%"></td>
+                <td colspan="2">
+                    <p id="areaDeBusqueda"> 
+                        Selecciona un tipo de busqueda: 
+                        <br>
+                        <input type="radio" id="L" name="tipo_de_busqueda" value="L">
+                        <label for="L">LOCAL</label>
+                        <input type="radio" id="I" name="tipo_de_busqueda" value="I">
+                        <label for="I">INTERNET</label>
+                        <br><br>
+                        <button onclick="ordenar_y_buscar()">Buscar y Ordenar</button>
+                        <br>
+                        <p id="mensaje_de_error"></p>
+                    </p>
+                    
+                </td><td></td>
+                <td style="width:7%"></td>
+            </tr>
+            <tr id="fila_personas" style="text-align: center;">
+                <td></td>
+                <td id="mujeres" style="width:43%">
+                    <div class="fems" id="fems" hidden></div>
+                </td>
+                <td id="hombres">
+                    <div class="mascs" id="mascs" hidden></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr id="fila_totales" style="text-align: center;">
+                <td></td>
+                <td>
+                    <p>Total de Mujeres: <b id="totalMujeres">0</b></p>
+                </td>
+                <td>
+                    <p>Total de Hombres: <b id="totalHombres">0</b></p>
+                </td>
+                <td></td>
+            </tr>
+            <tr id="fila_foto_del_mas_viejo" style="text-align: center;" hidden>
+                <td></td>
+                <td colspan="2">
+                    <h3> Persona de mayor edad:</h3>
+                    <div class="oldestPhoto"></div>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+    <script src="fn.js"></script>
+</html>

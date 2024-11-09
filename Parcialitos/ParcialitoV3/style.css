@@ -1,0 +1,12 @@
+table{
+    width:100%;
+    border:1px solid black;
+    text-align: center;
+}
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    color:rgb(4, 34, 7);
+}
+#mensajeError{
+    color:red;
+}

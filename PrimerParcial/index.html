@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PARCIAL</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table>
+            <caption>
+                <h1>Primer Parcial</h1>
+            </caption>
+            <tr id="fila_boton">
+                <td>
+                    <button onclick="buscar_y_mostrar()">BUSCAR</button>
+                </td>
+            </tr>
+            <tr style="height:30px">
+                <td colspan="2">
+                    <h3 id="tituloError"></h3>
+                    <p id="mensajeError"></p>
+                </td>
+            </tr>
+            <tr id="listaFinal" hidden>
+                <td>
+                    <div class="resultados" id="resultados"></div>
+                </td>
+            </tr>
+            <tr id="mayorYMenor" hidden>
+                <td>
+                    <h3>El mayor:</h3>
+                    <div class="mayor" id="mayor"></div>
+                    <h3>El menor:</h3>
+                    <div class="menor" id="menor"></div>
+                </td>
+                
+            </tr>
+        </table>
+    </body>
+    <script src="fn.js"></script>
+</html>

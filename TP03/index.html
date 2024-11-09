@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP 03</title>
+        <link rel="stylesheet" type="text/css" href="css\styles.css">
+    </head>
+    <body style="background-color: azure;">
+        <table>
+            <caption>
+                <h1>TP04</h1>
+                <p>Obtener 6 personajes</p> 
+            </caption>
+            <tr id="ingresoAyB">
+                <td>
+                    <div id="inA">
+                        <h2> Ingresa 3 numeros: </h2>
+                        <input type="number" id="groupA" autofocus>
+                        <button id="A" onclick="take('groupA')">Ingresar</button>
+                        <h3 id="cantInA">Ingresados: </h3>
+                    </div>
+                    <p id="errorA"></p>
+                    <div id="aCompleted">
+                        <h3>A</h3>
+                        <p>Completado</p>
+                    </div>
+                </td>
+                <td>
+                    <div id="inB">
+                        <h2> Ingresa 3 numeros: </h2>
+                        <input type="number" id="groupB">
+                        <button id="B" onclick="take('groupB')">Ingresar</button>
+                        <h3 id="cantInB">Ingresados: </h3>
+                    </div>
+                    <p id="errorB"></p>
+                    <div id="bCompleted">
+                        <h3>B</h3>
+                        <p>Completado</p>
+                    </div>
+                </td>
+            </tr>
+        <!--    
+            <tr id="restart">
+                <td colspan="2">
+                    <p id="error"></p>
+                    <button onclick="reset()">Reiniciar</button>
+                </td><td></td>
+            </tr>
+        -->    
+            <tr id="completeRow">
+                <td colspan="2">
+                    <p id="prueba"></p>
+                    <button onclick="complete()">Mostrar equipos</button>
+                </td><td></td>
+            </tr>
+           
+            <tr id="Personajes">
+                <td id="celdaA">
+                    <div id="photosGroupA" style="text-align: center;">
+                        <h2><b>GRUPO A:</b></h2> 
+                            <div class="photosA">
+                            </div>
+                    </div>
+                </td>
+                <td id="celdaB">
+                    <div id="photosGroupB"> 
+                        <h2><b>GRUPO B:</b></h2> 
+                        <div class="photosB">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>        
+    </body>
+    <script src="js\fn.js"></script>
+</html>

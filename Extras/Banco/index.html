@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP 04</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table style="width:100%">
+            <caption>
+                <h1> Practica Objetos </h1>
+            </caption>
+
+            <tr id="primeraFila">
+                <td style="width:10%"></td>
+                <td style="width:40%">
+                    <h2>Bank</h2>
+                </td>
+                <td id="campos" style="width:40%; height: 250px;">
+                    <table  id="ingresoDatos" style="width:100%;">
+                        <caption><h3>Creea un usuario</h3></caption>
+                        <tr>
+                            <td style="text-align: left; padding-left:100px;">
+                                <h4>Nombre:</h4>
+                            </td>
+                            <td>
+                                <input type="text" id="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding-left:100px;">
+                                <h4>Apellido:</h4>
+                            </td>
+                            <td>
+                                <input type="text" id="lastname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding-left:100px;">
+                                <h4>Fecha de nacimiento:</h4>
+                            </td>
+                            <td>
+                                <input type="text" id="dob">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button onclick="createUser()">Crear usuario</button>
+                            </td> <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="mensajeError"></div>
+                            </td> <td></td>
+                        </tr>
+                    </table>
+                    <!--  PARTE NUEVA DE MANEJO DE CUENTA: -->
+                    <section id="parteCuenta" hidden>
+                        <table style="width:100%;">
+                            <caption> 
+                                <h4 id="numeroCuenta" style="text-align: left;">
+                                    Cuenta: 
+                                </h4>
+                                <h4 id="nombreCliente" style="text-align: left;">
+                                </h4>
+                                <h3 id="dinero" style="text-align: right;">
+                                    $
+                                    <div id="saldo" style="float:right">
+                                    </div>
+                                </h3>
+                                
+                            </caption>
+                            <tr id = "parteErrores">
+                                <td id="mensajeErrorBanco" style="text-align: left; padding-left:100px;" colspan="2">
+                                </td><td></td>
+                            </tr>
+                            <tr id = "parteDeposito">
+                                <td style="text-align: left; padding-left:100px;">
+                                    <h4>Depositar: </h4>
+                                </td>
+                                <td>
+                                    <input type="number" id="deposit"> 
+                                    <button onclick="deposit()" style="width:90px">DEPOSITAR</button>
+                                </td>
+                            </tr>
+                            <tr style="height: 30px;" id="espacio">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr id="parteExtraccion">
+                                <td style="text-align: left; padding-left:100px;">
+                                    <h4>Extraer:</h4> 
+                                </td>
+                                <td>
+                                    <input type="number" id="extraction">
+                                    <button onclick="extract()" style="width:90px">EXTRAER</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </td>
+                <td style="width:10%"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                </td><td></td><td></td>
+            </tr>
+        </table>
+    </body>
+    <script src="fn.js"></script>
+</html>

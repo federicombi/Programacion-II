@@ -1,0 +1,23 @@
+body{
+    background-color:aliceblue;
+}
+table{
+    text-align: center;
+}
+h1{
+    color:rgb(35, 0, 68);
+    font-family:'Courier New', Courier, monospace;
+    font-size:60px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#result{
+    color:green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(4, 24, 67);
+    font-size: large;
+}
