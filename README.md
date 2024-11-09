@@ -1,2 +1,2 @@
 # Programacion-II
-Repositorio para &lt;b>todos&lt;/b> los ejercicios y trabajos de Programación II.
+Repositorio para <b>todos</b> los ejercicios y trabajos de Programación II.
