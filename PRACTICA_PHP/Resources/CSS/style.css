@@ -1,0 +1,78 @@
+table{
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #fbc2eb, #a6c0fe); /* Fondo degradado de rosa pastel a azul pastel */
+}
+.login-container, .logon-container {
+    background-color: #fffbdc; 
+    border-radius: 12px; 
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+}
+.login-header, .logon-header {
+    background-color: #2c7cde;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+}
+.login-header h1, .logon-header h1{
+    margin: 0;
+}
+.login-body, .logon-body {
+    padding: 20px;
+}
+.login-body p, .logon-body p  {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+.login-body input[type="text"], .login-body input[type="password"],.logon-body input[type="text"], .logon-body input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados en los campos */
+    background-color: #ffffff; /* Amarillo pastel para los campos */
+}
+.login-body button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f46b9b;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-body button:hover {
+    background-color: #f73566;
+}
+#logon-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6b6df4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#logon-button:hover {
+    background-color: #3639ef;
+}
